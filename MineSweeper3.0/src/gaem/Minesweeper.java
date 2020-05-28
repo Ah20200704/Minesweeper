@@ -3,22 +3,16 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import javax.swing.*;
 
-/**
- * Java Minesweeper Game
- *
- * Author: Jan Bodnar
- * Website: http://zetcode.com
- */
 
 public class Minesweeper extends JFrame {
 
     private JLabel statusbar;
-
+//runs initUI
     public Minesweeper() {
 
         initUI();
     }
-
+//Creates a new board using status bar
     private void initUI() {
 
         statusbar = new JLabel("");
@@ -33,7 +27,8 @@ public class Minesweeper extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
+//This is the main method, it begins by telling you about the game, then it creates a new instance of minesweeper
+//and makes it so that the player can see it 
     public static void main(String[] args) {
 
         EventQueue.invokeLater(() -> {
