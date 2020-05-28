@@ -63,7 +63,7 @@ public class Board extends JPanel {
         addMouseListener(new MinesAdapter());
         newGame();
     }
-//This method creates the entire game
+//This method creates a random new board of mines and spaces
     private void newGame() {
 
         int cell;
