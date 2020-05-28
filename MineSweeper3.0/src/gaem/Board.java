@@ -154,7 +154,7 @@ public class Board extends JPanel {
             }
         }
     }
-
+    //finds empty cells
     private void find_empty_cells(int j) {
 
         int current_col = j % N_COLS;
@@ -246,7 +246,7 @@ public class Board extends JPanel {
 
     }
 
-    @Override
+    //properly puts images on blocks
     public void paintComponent(Graphics g) {
 
         int uncover = 0;
@@ -302,7 +302,7 @@ public class Board extends JPanel {
 
     private class MinesAdapter extends MouseAdapter {
 
-        @Override
+        //checks where mouse is pressed
         public void mousePressed(MouseEvent e) {
 
             int x = e.getX();
